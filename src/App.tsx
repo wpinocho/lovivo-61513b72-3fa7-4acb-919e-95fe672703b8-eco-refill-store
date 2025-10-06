@@ -18,6 +18,7 @@ import NotFound from "./pages/NotFound";
 import Checkout from "./pages/Checkout";
 import ThankYou from "./pages/ThankYou";
 import Cart from "./pages/Cart";
+import About from "./pages/About";
 
 const queryClient = new QueryClient();
 
@@ -52,7 +53,7 @@ const App = () => (
                 <Route path="/thank-you/:orderId" element={<ThankYou />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/blog/:slug" element={<BlogPost />} />
-                 {/* Aquí puedes agregar/modificar rutas */}
+                <Route path="/about" element={<About />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </CartUIProvider>

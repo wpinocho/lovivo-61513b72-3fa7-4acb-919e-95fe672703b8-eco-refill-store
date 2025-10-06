@@ -58,19 +58,25 @@ export const EcommerceTemplate = ({
                 to="/" 
                 className="text-eco-dark/70 hover:text-eco-green transition-colors font-medium"
               >
-                Shop
+                Tienda
+              </Link>
+              <Link 
+                to="/about" 
+                className="text-eco-dark/70 hover:text-eco-green transition-colors font-medium"
+              >
+                Sobre Nosotros
               </Link>
               <Link 
                 to="/blog" 
                 className="text-eco-dark/70 hover:text-eco-green transition-colors font-medium"
               >
-                Learn
+                Blog
               </Link>
               <a 
                 href="#impact" 
                 className="text-eco-dark/70 hover:text-eco-green transition-colors font-medium"
               >
-                Impact
+                Impacto
               </a>
             </nav>
           </div>
@@ -118,39 +124,45 @@ export const EcommerceTemplate = ({
               <span className="text-xl font-bold">EcoRefill</span>
             </div>
             <p className="text-white/70 text-sm">
-              Sustainable cleaning solutions for a healthier planet. One refill at a time.
+              Soluciones de limpieza sostenibles para un planeta más saludable. Una recarga a la vez.
             </p>
           </div>
 
           {/* Shop */}
           <div>
-            <h3 className="font-semibold mb-4 text-eco-lime">Shop</h3>
+            <h3 className="font-semibold mb-4 text-eco-lime">Tienda</h3>
             <div className="space-y-2">
               <Link 
                 to="/" 
                 className="block text-white/70 hover:text-white transition-colors text-sm"
               >
-                Starter Kits
+                Kits de Inicio
               </Link>
               <Link 
                 to="/" 
                 className="block text-white/70 hover:text-white transition-colors text-sm"
               >
-                Refills
+                Recargas
               </Link>
               <Link 
                 to="/" 
                 className="block text-white/70 hover:text-white transition-colors text-sm"
               >
-                Accessories
+                Accesorios
               </Link>
             </div>
           </div>
 
           {/* Learn */}
           <div>
-            <h3 className="font-semibold mb-4 text-eco-lime">Learn</h3>
+            <h3 className="font-semibold mb-4 text-eco-lime">Aprende</h3>
             <div className="space-y-2">
+              <Link 
+                to="/about" 
+                className="block text-white/70 hover:text-white transition-colors text-sm"
+              >
+                Sobre Nosotros
+              </Link>
               <Link 
                 to="/blog" 
                 className="block text-white/70 hover:text-white transition-colors text-sm"
@@ -161,27 +173,27 @@ export const EcommerceTemplate = ({
                 href="#" 
                 className="block text-white/70 hover:text-white transition-colors text-sm"
               >
-                How It Works
+                Cómo Funciona
               </a>
               <a 
                 href="#" 
                 className="block text-white/70 hover:text-white transition-colors text-sm"
               >
-                Our Impact
+                Nuestro Impacto
               </a>
             </div>
           </div>
 
           {/* Connect */}
           <div>
-            <h3 className="font-semibold mb-4 text-eco-lime">Connect</h3>
+            <h3 className="font-semibold mb-4 text-eco-lime">Conecta</h3>
             <SocialLinks />
             <div className="mt-4 space-y-2">
               <a 
                 href="#" 
                 className="block text-white/70 hover:text-white transition-colors text-sm"
               >
-                Contact Us
+                Contáctanos
               </a>
               <a 
                 href="#" 
@@ -195,11 +207,11 @@ export const EcommerceTemplate = ({
 
         <div className="mt-8 pt-8 border-t border-white/20 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/70 text-sm">
-            &copy; 2024 EcoRefill. All rights reserved.
+            &copy; 2024 EcoRefill. Todos los derechos reservados.
           </p>
           <div className="flex items-center gap-2 text-sm text-white/70">
             <Leaf className="h-4 w-4 text-eco-lime" />
-            <span>Certified B Corporation</span>
+            <span>Corporación B Certificada</span>
           </div>
         </div>
       </div>
